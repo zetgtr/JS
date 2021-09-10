@@ -105,53 +105,60 @@
 //     return a * b;
 // }
 // function factor(a,b){
-//     return a / b;
+//     if (b != 0){
+//         return a / b;
+//     }
+//     return 0;
 // }
 
 // дз - 6
 
-// function mathOperation(arg1, arg2, operation){
-//     if (operation == '+'){
-//         return sum
-//     }
-//     if (operation == '-'){
-//         return difference
-//     }
-//     if (operation == '*'){
-//         return work
-//     }
-//     if (operation == '/'){
-//         return factor
-//     }
-//     switch(operation){
-//         case sum:
-//             return arg1 + arg2;
+// a = +prompt('Ведите число х')
+// b = +prompt('Введите число b')
+// operation = prompt("Введите знак + , - , * , /")
+
+//  function mathOperation(a, b, operation){
+//     switch (operation) {
+//         case "+":
+//             alert(sum(a,b))
 //         break;
-//         case difference:
-//             return arg1 - arg2;
+//         case '-':
+//             alert(difference(a,b))
 //         break;
-//         case work:
-//             return arg1 * arg2;
+//         case '*':
+//             alert(work(a,b))
 //         break;
-//         case factor:
-//             return arg1 / arg2;
+//         case '/':
+//             alert(factor(a,b))
 //         break;
-//    }
+//         default:
+//             alert('Введен неверный знак!')
+//     }
 // }
+// mathOperation(a, b, operation)
 
 // дз - 7 
 
 
 // if (null > 0) {
-//     alert("да больше")
+//     alert("да больше") // false
 // }
 // if (null < 0) {
-//     alert("да меньше")
+//     alert("да меньше") // false
+// }
+// if (null == 0) {
+//     alert("да ровно") // false
+// }
+// if (null >= 0) {
+//     alert("да больше либо ровно") // true
+// }
+// if (null <= 0) {
+//     alert("да меньше либо ровно") // true
+// }
+// if (null != 0){
+//     alert("да не 0") // true
 // }
 
-// if (null == 0) {
-//     alert("да ровно")
-// }
 // null означает, что переменная содержит ссылку на пространство в памяти, которое не содержит объекта.
 
 // 0 -это числовой тип данных со значением 0.
