@@ -1,0 +1,151 @@
+.conteiner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.slogan {
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.textlist {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-top: 12px;
+    margin-left: 16px;
+    max-width: 301px;
+    margin-right: 16px;
+}
+
+.hlist {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 18px;
+    margin-top: 25px;
+}
+
+.list:hover {
+    -webkit-box-shadow: 0 5px 8px black;
+    box-shadow: 0 5px 8px black;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.imgconteiner {
+    position: relative;
+    width: 100%;
+}
+
+.img-conteiner:hover .listimg {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+.imgconteiner:hover .listbuttom {
+    opacity: 1;
+}
+
+.listbuttom {
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 13px;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.list-buttom {
+    position: absolute;
+    top: 32%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+} 
+
+.list {
+    width: 32%;
+    background: #F8F8F8;
+    margin-bottom: 30px;
+}
+
+.listimg {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.listbuttom:hover {
+    -webkit-box-shadow: 0 0px 10px #ffffff;
+    box-shadow: 0 0px 10px #ffffff;
+    color: #FFFFFF;
+}
+
+.formaimg {
+    display: block;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.basket {
+    height: 500px;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 9px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.cook {
+    height: 263px;
+}
+
+.flex{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 270px;
+}
+
+.margin{
+    margin-top: -6px;
+    margin-left: 42px;
+}
+
+.click {
+    margin-top: 32px;
+}
+
+.cena {
+    margin-top: 58px;
+    margin-left: 274px;
+}

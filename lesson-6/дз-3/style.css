@@ -1,0 +1,10 @@
+.conteiner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    height: 720px;
+}
+img {
+    width: 1024px;
+    height: 720px;
+}
