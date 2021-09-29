@@ -236,34 +236,10 @@ function createFood() {
                     food_cell.setAttribute('class', classes + 'food-unit');
                     foodCreated = true;
                     // С каждым уровнем создается больше бомб
-                if (level == 1){
+               if (level < 5){
+                    for (i=0;i<level;i++){
                     createBomb()
-                    break;
-                }
-                if (level == 2){
-                    createBomb()
-                    createBomb()
-                    break;
-                }
-                if (level == 3){
-                    createBomb()
-                    createBomb()
-                    createBomb()
-                    break;
-                }
-                if (level == 4){
-                    createBomb()
-                    createBomb()
-                    createBomb()
-                    createBomb()
-                    break;
-                }
-                if (level == 5){
-                    createBomb()
-                    createBomb()
-                    createBomb()
-                    createBomb()
-                    createBomb()
+                    }
                     break;
                 }
             }
