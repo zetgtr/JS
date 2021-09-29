@@ -1,0 +1,11 @@
+.flex {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.conteiner {
+    margin: 0 auto;
+    width: 1200px;
+}
