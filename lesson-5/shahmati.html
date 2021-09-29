@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахматная доска</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="conteiner"></div>
+</body>
+<script>
+    line = [,'','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','K'];
+    var table = document.createElement("div"),tr,td;
+    table.className = "flex";
+for (var i = 1; i < 11; i++) {
+    tr = document.createElement("div");
+    var fegure = []
+    fegure[1] = i-1
+    table.append(tr);
+    for (var j = 1; j < 11; j++) {
+        fegure[0] = line[j]
+        td = document.createElement("div");
+        td.classList.add("figure"+j);
+        tr.append(td);
+        td.classList.add("td");
+        console.log(fegure)
+        
+            if (fegure[1] == 0 || fegure[1] == 9 || fegure[0] == '' || fegure[0] == 'K'){
+                td.classList.add("none")
+            }
+                       
+            if (fegure[0] == 'A' && fegure[1] == 1 || fegure[0] == 'A' && fegure[1] == 8|| fegure[0] == 'H' && fegure[1] == 1 || fegure[0] == 'H' && fegure[1] == 8){
+            td.innerHTML = "&#9814;"
+            }
+            if (fegure[0] == 'A' && fegure[1] == 2 || fegure[0] == 'A' && fegure[1] == 7 || fegure[0] == 'H' && fegure[1] == 2 || fegure[0] == 'H' && fegure[1] == 7){
+            td.innerHTML = "&#9816;"
+            }
+            if (fegure[0] == 'A' && fegure[1] == 3 || fegure[0] == 'A' && fegure[1] == 6 || fegure[0] == 'H' && fegure[1] == 3 || fegure[0] == 'H' && fegure[1] == 6){
+            td.innerHTML = "&#9815;"
+            }
+            if (fegure[0] == 'A' && fegure[1] == 4 || fegure[0] == 'H' && fegure[1] == 4){
+            td.innerHTML = "&#9813;"
+            }
+            if (fegure[0] == 'A' && fegure[1] == 5 || fegure[0] == 'H' && fegure[1] == 5){
+            td.innerHTML = "&#9812;"
+            }
+            if (fegure[0] == 'B' || fegure[0] == 'G'){
+            td.innerHTML = "&#9817;"
+            }
+            if (fegure[0] == 'A' || fegure[0] == 'B'){
+                td.classList.add("transform");
+                if (fegure[0] == 'A' && fegure[1] == 0 || fegure[0] == 'B' && fegure[1] == 0){
+                    td.classList.remove('transform')
+                }
+            }
+
+            if (fegure[0] == 'A' && fegure[1] == 0 || fegure[0] == 'A' && fegure[1] == 9 ) {
+                td.innerHTML = "1"
+            }
+            if (fegure[0] == 'B' && fegure[1] == 0 || fegure[0] == 'B' && fegure[1] == 9) {
+                td.innerHTML = "2"
+            }
+            if (fegure[0] == 'C' && fegure[1] == 0 || fegure[0] == 'C' && fegure[1] == 9) {
+                td.innerHTML = "3"
+            }
+            if (fegure[0] == 'D' && fegure[1] == 0 || fegure[0] == 'D' && fegure[1] == 9) {
+                td.innerHTML = "4"
+            }
+            if (fegure[0] == 'E' && fegure[1] == 0 || fegure[0] == 'E' && fegure[1] == 9) {
+                td.innerHTML = "5"
+            }
+            if (fegure[0] == 'F' && fegure[1] == 0 || fegure[0] == 'F' && fegure[1] == 9) {
+                td.innerHTML = "6"
+            }
+            if (fegure[0] == 'G' && fegure[1] == 0 || fegure[0] == 'G' && fegure[1] == 9) {
+                td.innerHTML = "7"
+            }
+            if (fegure[0] == 'H' && fegure[1] == 0 || fegure[0] == 'H' && fegure[1] == 9) {
+                td.innerHTML = "8"
+            }
+            
+            if (fegure[0] == '' && fegure[1] == 1 || fegure[0] == 'K' && fegure[1] == 1 ) {
+                td.innerHTML = "A"
+            }
+            if (fegure[0] == '' && fegure[1] == 2 || fegure[0] == 'K' && fegure[1] == 2) {
+                td.innerHTML = "B"
+            }
+            if (fegure[0] == '' && fegure[1] == 3 || fegure[0] == 'K' && fegure[1] == 3) {
+                td.innerHTML = "C"
+            }
+            if (fegure[0] == '' && fegure[1] == 4 || fegure[0] == 'K' && fegure[1] == 4) {
+                td.innerHTML = "D"
+            }
+            if (fegure[0] == '' && fegure[1] == 5 || fegure[0] == 'K' && fegure[1] == 5) {
+                td.innerHTML = "E"
+            }
+            if (fegure[0] == '' && fegure[1] == 6 || fegure[0] == 'K' && fegure[1] == 6) {
+                td.innerHTML = "F"
+            }
+            if (fegure[0] == '' && fegure[1] == 7 || fegure[0] == 'K' && fegure[1] == 7) {
+                td.innerHTML = "G"
+            }
+            if (fegure[0] == '' && fegure[1] == 8 || fegure[0] == 'K' && fegure[1] == 8) {
+                td.innerHTML = "H"
+            }
+            if (fegure[0] == '' || fegure[1] == 9){
+                td.classList.add ('transform')
+            }
+            if (fegure[0] == '' || fegure[1] == 9 || fegure[1] == 0 || fegure[0] == 'K')
+                td.classList.add ('text')
+            
+        if (j % 2 == i % 2){
+        td.classList.add("black");
+    }
+    }
+}
+document.querySelector("div").append(table);
+</script>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .conteiner {
+        margin: 0 auto;
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+        margin-top: 128px;
+    }
+    .transform {
+        transform: rotate(180deg);
+    }
+    .black {
+        background-color: black;
+        text-align: center;
+        color: blanchedalmond;
+        
+    }
+    .flex {
+        display: flex;
+    }
+    .td{
+        text-align: center;
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+    }
+    .none {
+        background: none;
+        border: 1px solid white;
+
+
+    }
+    .text {
+        color: #000;
+    }
+       </style>
+</html>
